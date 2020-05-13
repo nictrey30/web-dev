@@ -1,0 +1,49 @@
+.parent {
+  position: relative;
+  height: 200vh;
+}
+
+/* relative positioning acts like static positioning, but it allows you to do 
+4 specific things that static positioning does not -> 
+you can change the top, left, right and bottom of the element */
+/* relative positioning it allows you to change the position of the element relative to where it would be in the document flow if it was statically positioned */
+/* relative positioning removes the element out of the document flow */
+
+/* position: absolute completely removes the element from the document flow, and 
+everything renders as if that element didn't exist at all */
+/* useful when you want to put an element into a specific position but you dont want anything else to move around it */
+/* position: absolute absolutely positions an element inside of some parent container that it can reference*/
+.child-one {
+  position: sticky;
+  top: 30px;
+}
+
+/* fixed position elements are always fixed positioned based on the entire html document */
+/* fixed position elements stay in the same place when you scroll */
+.child-two {
+}
+
+.child-three {
+}
+
+.parent {
+  padding: 5px;
+  background-color: #00aaff;
+}
+
+.child {
+  padding: 5px;
+}
+
+.child-one {
+  background-color: rgb(116, 255, 116);
+}
+
+.child-two {
+  background-color: rgb(248, 117, 117);
+}
+
+.child-three {
+  background-color: rgb(255, 116, 232);
+}
+/* sticky position is a combination of relative and fixed positioning */
